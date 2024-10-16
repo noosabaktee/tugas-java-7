@@ -11,6 +11,10 @@ package looping;
 public class Ayam {
     public static void main(String[] args) {
       for(int i=10;i>=1;i--){
+        if(i-1 == 0){
+            System.out.println("Anak ayam turun " + i + " mati 1 tinggal induknya");
+            return;
+        }
         System.out.println("Anak ayam turun " + i + " mati 1 tinggal " + (i-1));
       }
     }
